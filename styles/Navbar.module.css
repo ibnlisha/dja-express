@@ -1,0 +1,26 @@
+.navItem{
+    margin-left: 1em;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.navItem:hover{
+    opacity: 1;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.navbar{
+    border-bottom: 0.2em groove grey;
+    margin-bottom: 1em;
+}

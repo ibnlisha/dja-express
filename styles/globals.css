@@ -24,3 +24,12 @@ a {
     background: black;
   }
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+.main{
+  flex: 1;
+}
