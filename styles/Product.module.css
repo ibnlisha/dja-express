@@ -1,0 +1,21 @@
+
+.frame{
+    border: none;
+    width: 25%;
+}
+
+@media screen and (max-width: 1280px) {
+    .frame{
+        width: 33%;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .frame{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .frame{
+        width: 100%;
+    }
+}
