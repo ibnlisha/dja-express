@@ -1,0 +1,15 @@
+.widgets{
+display: flex;
+flex-wrap: wrap;
+}
+
+.widget{
+    flex: 1;
+    flex-basis: calc(50% - 1em);
+    font-size: 1.2em;
+    margin: 0.5em;
+    border-radius: 1em;
+    padding: 0 3em;
+    text-align: center;
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.7);
+}

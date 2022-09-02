@@ -96,15 +96,22 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0.2em auto;
+}
+.imgContainer:hover{
+  justify-content: space-between;
 }
 .show:hover button {
   display: block !important;
   cursor: pointer;
 }
-
+.wellcomeMessage{
+  color:antiquewhite;
+  font-size: 1.2em;
+  text-align: center;
+}
 .card:hover,
 .card:focus,
 .card:active {

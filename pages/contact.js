@@ -1,50 +1,60 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {faPhone, faEnvelope, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/Contact.module.css'
 import styles1 from '../styles/Home.module.css'
 const ContanctUs = () => {
   return (
     <div className={styles1.container}>
-        <h1 className={styles1.title}>Contact Us Now</h1>
+        <h1 className={styles1.title}>Contact Us </h1>
         <div className={styles.contactContainer}>
-            <div>
-                <h3>You can contact us via:</h3>
-                <ul className={styles.list}>
-                    <li><a href='https://web.whatsapp.com/'>
-                        <FontAwesomeIcon icon = {faWhatsapp} />WhatsApp</a></li>
-                    <li><a href='https://www.instagram.com/'>
-                    <FontAwesomeIcon icon = {faInstagram} />Instagram
-                    </a></li>
-                    <li><a href='https://twitter.com/?lang=en'>
-                        <FontAwesomeIcon icon = {faTwitter} />Twitter </a></li>
-                    <li><a href='https://www.facebook.com/'>
-                        <FontAwesomeIcon icon = {faFacebook} />Facebook</a></li>
-                    <li>Call our customer service <br/>
-                        <FontAwesomeIcon icon = {faPhone} />
-                        <a href='tel:+90 5** *** ** **'>+90 5** *** ** **</a>
-                    </li>
-                    <li>Or send us a mail if you prefer <br/>
+            <div className={styles.section}>
+                <h3>Contact</h3>
+                <address>
+                    <FontAwesomeIcon icon={faLocationDot}/> Güllük Mahallesi, <br /> 
+                    Kırımlılar sokak, <br />
+                    No: 13 <br />
+                    <FontAwesomeIcon icon = {faPhone} />
+                        <a href='tel:+90 539 253 48 78'> +90 539 253 48 78</a> <br/>
                         <FontAwesomeIcon icon = {faEnvelope} />
-                        <a href = 'mailTo:info@jaexpress.com'>info@djaexpress.com</a>
-                    </li>
-                </ul>
+                        <a href = 'mailTo:expressdaj@gmail.com'> expressdaj@gmail.com</a>
+                </address>
             </div>
-            <form>
+        <form className={styles.section}>
                 <h3>Leave us a comment</h3>
-                <label htmlFor='FullNm' className={styles.formControl}>Full Name</label>
-                <input name = 'fullName'  className={styles.formControl}id = 'FullNm' placeholder='Full name' />
-                <label htmlFor='mailId' className={styles.formControl}>Subject</label>
-                <input name = 'email'  className={styles.formControl}id = 'mailId' placeholder='example@gmail.com' />
-                <label htmlFor='header' className={styles.formControl}>Subject</label>
-                <input name = 'subject'  className={styles.formControl}id = 'header' placeholder='Subject' />
-                <label htmlFor='comment' className={styles.formControl}>Comment</label>
+                <div className={styles.names}>
+                    <div className={styles.creds}>
+                        <label htmlFor='FullNm' >Full Name</label>
+                        <input name = 'fullName'  className={styles.formControl}id = 'FullNm' placeholder='Enter your name' />
+                    </div>
+                    <div className={styles.creds}>
+                        <label htmlFor='mailId' >Email</label>
+                        <input name = 'email'  className={styles.formControl}id = 'mailId' placeholder='example@gmail.com' />
+                    </div>
+                </div>
+                <label htmlFor='header' >Subject</label>
+                <input name = 'subject'  className={styles.formControl}id = 'header' placeholder='Enter your subject' />
+                <label htmlFor='comment' >Comment</label>
                 <textarea name = 'comment'
                 id = 'comment' className={styles.formControl}
-                rows= '8'
+                rows= '3'
                 placeholder='Type here...'></textarea>
                 <button>Submit</button>
             </form>
+            <div className={styles.section}>
+                <h3>Stay connected:</h3>
+                <ul className={styles.list}>
+                    <li className={styles.listItem}><a href='https://web.whatsapp.com/'>
+                        <FontAwesomeIcon icon = {faWhatsapp} /> WhatsApp</a></li>
+                    <li className={styles.listItem}><a href='https://www.instagram.com/'>
+                    <FontAwesomeIcon icon = {faInstagram} /> Instagram
+                    </a></li>
+                    <li className={styles.listItem}><a href='https://twitter.com/?lang=en'>
+                        <FontAwesomeIcon icon = {faTwitter} /> Twitter </a></li>
+                    <li className={styles.listItem}><a href='https://www.facebook.com/'>
+                        <FontAwesomeIcon icon = {faFacebook} /> Facebook</a></li>
+                </ul>
+            </div>
         </div>
     </div>
   )
