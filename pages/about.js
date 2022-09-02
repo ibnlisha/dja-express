@@ -21,7 +21,7 @@ const About = () => {
           <div className={AboutStyles.widget}>
             <h1>Biref history</h1>
             <p className='history'>
-            Dja Express with it's commitment to customer
+            Dja Express with it&apos;s commitment to customer
              satisfaction and a customer-centric culture has
               been serving customers from all the four corners of 
               the globe since 2013.  We come a long way from serving our
