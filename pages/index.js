@@ -26,15 +26,14 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        {/* <h1 className={styles.title}>
-          Welcome to your favorite export service
-        </h1> */}
         <form onSubmit={e => {
           e.preventDefault();
-          router.push({
-            pathname: '/Search',
-            query: {q: searchString}
-          })
+          if(searchString){
+            router.push({
+              pathname: '/Search',
+              query: {q: searchString}
+            })
+          }
         }} >
           <input type="search" 
           onChange = {e => setSearchString((e.target.value))}
@@ -64,8 +63,6 @@ export default function Home() {
           style={{fontSize: '3em', display: 'none'}}
           onClick = {nextSlide}
           ><FontAwesomeIcon icon={faAngleRight} /></button>
-          {/* <Image src={image} alt='Random image' layout='responsive' width='400' height='300'/> */}
-          {/* <img  src={image} alt = 'random pic' style={{width: '100%'}}/> */}
         </div>
         <nav style={{listStyleType: "none"}} 
         className={styles.grid}>

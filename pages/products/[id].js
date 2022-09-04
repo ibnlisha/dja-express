@@ -1,8 +1,10 @@
 import React from 'react'
 import {pdts} from '../../public/SampleProducts'
 import Carousel from '../../utils/Carousel'
+import styles from '../../styles/Home.module.css'
+
 const ProductDetails = ({pdt}) => 
-    <div>
+    <div className={styles.container}>
         <h1>{pdt.name}</h1>
         <Carousel images = {pdt.images} />
         <hr/>

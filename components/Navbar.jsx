@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPhone, faHandHolding, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faPhone, faHandHolding, faBars, faXmark, faHome } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/Navbar.module.css'
 import React ,{ useState } from 'react';
 import Head from 'next/head'
@@ -25,14 +25,17 @@ const Navbar = () => {
               </button>
             </div>
           <nav className={showNavs ? styles.showNav : styles.hideNav}>
-              <li className={styles.navItem}><Link href="/services">
-              <span ><FontAwesomeIcon icon ={faHandHolding} />Services</span>
+              <li className={styles.navItem}><Link href="/">
+              <span ><FontAwesomeIcon icon ={faHome} /> Home</span>
                   </Link></li>
               <li className={styles.navItem}><Link href="/about">
                   <span><FontAwesomeIcon icon = {faUser} /> About us</span>
                   </Link></li>
+              <li className={styles.navItem}><Link href="/services">
+              <span ><FontAwesomeIcon icon ={faHandHolding} /> Services</span>
+                  </Link></li>
               <li className={styles.navItem}><Link href="/contact">
-                  <span><FontAwesomeIcon icon ={faPhone} />Contact us</span>
+                  <span><FontAwesomeIcon icon ={faPhone} /> Contact us</span>
                   </Link></li>
           </nav>
     </div>

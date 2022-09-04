@@ -57,12 +57,15 @@ const [currentIdx, setCurrentIdx] = useState(0)
         {images.map((image, idx)=>(
             <li key = {uuid()} style={{marginLeft: '0.2em'}}>
                 <button 
-                onClick = {e => setCurrentIdx(idx)}
+                onClick = {() => setCurrentIdx(idx)}
                 style = {{
-                    border: idx !== currentIdx? '' : '0.3em solid steelblue'
+                    borderRadius: '8px',
+                    border: idx !== currentIdx? '' : '0.2em solid steelblue'
                 }}
                 >
-                    <Image src = {image} width = '100' height = '125' alt = ''/>
+                    <Image src = {image} width = '40' 
+                    // layout='responsive'
+                    height = '50' alt = ''/>
                 </button>
             </li>
         ))}

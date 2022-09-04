@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
 import styles from '../styles/Product.module.css'
+import Link from "next/link"
 
-const Product = ({name, images}) => {
+const Product = ({id,name, images}) => {
     const [show, setShow] = useState(false)
     return (
     <>
@@ -16,9 +17,11 @@ const Product = ({name, images}) => {
                 alt = {name} width='200' height='250'
                 layout="responsive" />
                 <h1>{name}</h1>
-                <button>Get a quote
-                    <FontAwesomeIcon icon = {faQuoteRight} />
-                </button>
+                <Link href={`products/${id}`}>
+                    <button>Get a quote
+                        <FontAwesomeIcon icon = {faQuoteRight} />
+                    </button>
+                </Link>
             </div>
         </button>
     </>

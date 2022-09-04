@@ -1,0 +1,30 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.innerModal{
+    position: relative;
+    width: 60%;
+    padding: 1em;
+    background-color: lightgray;
+}
+.close{
+    position: absolute;
+    cursor: pointer;
+    top: 1.5em;
+    left: calc(100% - 4.5em);
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .innerModal{
+        width: 100%;
+    }
+}

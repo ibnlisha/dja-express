@@ -3,10 +3,13 @@
     cursor: pointer;
     opacity: 0.5;
 }
-.navItem:hover{
+.navItem:hover,
+.navItem:focus,
+.navItem:active{
     opacity: 1;
+    color: #0070f3;
+    border-color: 1px solid #0070f3;
 }
-
 .navContainer, .menuContainer{
     display: flex;
     flex-wrap: wrap;
