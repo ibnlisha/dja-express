@@ -65,7 +65,7 @@ const Services = () => {
                 of international students choosing to study in Turkey. Currently, Turkey has about 
                 650,000 international students, indicating the prominence of the nation as a 
                 destination for higher education.</p>
-              <p>One reason many choose to study in Turkey is the country's comparatively low 
+              <p>One reason many choose to study in Turkey is the country&#39;s comparatively low 
                 cost and high quality of education, as well as the possibility of receiving 
                 scholarships that also provide a monthly salary. With a target of 350,000 
                 foreign students, the Turkish government is eager to expand its appeal into 
