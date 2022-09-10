@@ -76,7 +76,7 @@ export default function Home() {
         <section className={styles.grid}>
           {/* <h1>Most Searched Goods</h1> */}
           {/* <Products /> */}
-          <Link href='/servicess#expts' >
+          <Link href='/services#expts' >
             <div className={styles.card}>
               <h1>Exports</h1>
               <img src='' alt = ''/>
