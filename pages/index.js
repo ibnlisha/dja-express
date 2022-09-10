@@ -6,6 +6,7 @@ import { faAngleLeft, faAngleRight, faSearch } from '@fortawesome/free-solid-svg
 import Products from '../components/Products';
 import {useRouter} from 'next/router'
 import Link from 'next/link';
+import CostumerWidget from '../components/CostumerWidget';
 export default function Home() { 
   const [currentIdx, setCurrentIdx] = useState(0)
   const [searchString, setSearchString] = useState('')
@@ -95,6 +96,7 @@ export default function Home() {
             </div>
           </Link>
         </section>
+        <CostumerWidget />
       </main>
     </div>
   )

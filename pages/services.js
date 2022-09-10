@@ -22,7 +22,7 @@ const Services = () => {
           <div style={{flexBasis: '100%'}}>
             <div id='expts'>
               <h1 >Export</h1>
-              <img 
+              <img className = {styles.imageSize}
               alt='An illustration of export via a plane, ship and a clock'
               style={{float: 'left', marginRight: '2em', borderRadius: '1em'}}
               src='https://freerangestock.com/thumbnail/39109/global-logistics-and-freight-concept.jpg'/>
@@ -38,11 +38,11 @@ const Services = () => {
                  customs union, making trade in 2022 appear to be getting stronger for Turkey&#39;s exports.</p>
             </div>
             <div id='medico'>
-              
-              <img 
+            <h1  >Medical tourism</h1>
+              <img className = {styles.imageSize}
               style={{float: 'right', marginLeft: '2em', borderRadius: '1em'}} alt='Doctor and nurse'
               src='https://media.istockphoto.com/photos/portrait-of-two-doctors-in-masks-picture-id672449872?k=20&m=672449872&s=612x612&w=0&h=3PIVbsJSBQqk13V0iDegbP2IUnHWw4EoGBpljhYwj7I='/>
-              <h1  >Medical tourism</h1>
+              
               <p>Turkey is one of the top 17 destinations for tourists seeking medical care nowadays. 
                 In 2018, 700,000 tourists traveled to Turkey just to utilize the country&#39;s first-rate 
                 healthcare offerings. Medical tourists make up 32% of all patients in the nation!
@@ -57,7 +57,7 @@ const Services = () => {
             </div>
             <div id='edumo'>
               <h1 >Education</h1>
-              <img 
+              <img className = {styles.imageSize}
               alt='Student going to the university'
               style={{float: 'left', marginRight: '2em', borderRadius: '1em'}}
               src='https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGludGVybmF0aW9uYWwlMjBzdHVkZW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'/>

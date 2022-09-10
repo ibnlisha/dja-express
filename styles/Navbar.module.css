@@ -31,6 +31,7 @@
 .navbar{
     border-bottom: 0.2em groove grey;
     margin-bottom: 1em;
+    background-color: #eaeaea;
 }
 .menu{
     cursor: pointer;

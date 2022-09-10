@@ -31,7 +31,7 @@ const ContanctUs = () => {
     }
   return (
     <div className={styles1.container}>
-        <h1 className={styles1.title}>Contact Us </h1>
+        {/* <h1 className={styles1.title}>Contact Us </h1> */}
         <div className={styles.contactContainer}>
             <div className={styles.section}>
                 <h3>Contact</h3>
@@ -61,7 +61,7 @@ const ContanctUs = () => {
             </div>
             <form className={styles.section}
         onSubmit ={handleSubmit}>
-                <h3>Leave us a comment</h3>
+                <h3>Leave us a message</h3>
                 <div className={styles.names}>
                     <div className={styles.creds}>
                         <label htmlFor='FullNm' >Full Name</label>

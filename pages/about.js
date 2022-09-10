@@ -11,7 +11,7 @@ const About = () => {
             <p className='mission-statement'>
               Our mission is to help foreign Investors, businessmen, 
               and individuals willing to invest in or purchase locally 
-              produced goods and services from Turkey</p>
+              produced goods and services from Turkey.</p>
             </div>
           <div className={AboutStyles.widget}>
             <h1>Our Vision</h1>

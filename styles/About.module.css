@@ -13,3 +13,11 @@ flex-wrap: wrap;
     text-align: center;
     box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (max-width: 768px) {
+    .widget{
+        padding: 0 0.5em;
+        text-align: justify;
+        flex-basis: 100%;
+    }
+}
