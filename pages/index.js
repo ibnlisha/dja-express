@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faSearch } from '@fortawesome/free-solid-svg-icons';
 import Products from '../components/Products';
 import {useRouter} from 'next/router'
+import Link from 'next/link';
 export default function Home() { 
   const [currentIdx, setCurrentIdx] = useState(0)
   const [searchString, setSearchString] = useState('')
@@ -64,17 +65,35 @@ export default function Home() {
           onClick = {nextSlide}
           ><FontAwesomeIcon icon={faAngleRight} /></button>
         </div>
-        <nav style={{listStyleType: "none"}} 
+        {/* <nav style={{listStyleType: "none"}} 
         className={styles.grid}>
           <li className={styles.card}>Feauted Products</li>
           <li className={styles.card}>Trending now</li>
           <li className={styles.card}>Popular categories</li>
           <li className={styles.card}>Sales</li>
           <li className={styles.card}>Top rated</li>
-        </nav>
-        <section>
-          <h1>Most Searched Goods</h1>
-          <Products />
+        </nav> */}
+        <section className={styles.grid}>
+          {/* <h1>Most Searched Goods</h1> */}
+          {/* <Products /> */}
+          <Link href='/servicess#expts' >
+            <div className={styles.card}>
+              <h1>Exports</h1>
+              <img src='' alt = ''/>
+            </div>
+          </Link>
+          <Link href='/services#medico' >
+            <div className={styles.card}>
+              <h1>Medical tourism</h1>
+              <img src='' alt = ''/>
+            </div>
+          </Link>
+          <Link href='/services#edumo' >
+            <div className={styles.card}>
+              <h1>Education</h1>
+              <img src='' alt = ''/>
+            </div>
+          </Link>
         </section>
       </main>
     </div>

@@ -1,8 +1,8 @@
 import Link from 'next/link'
-
+import styles from '../styles/Home.module.css'
 const Footer = () => {
   return (
-    <footer style={{textAlign:'center', marginTop: '1em'}}>
+    <footer className={styles.footer}>
       <hr />
         <div>
             <Link href='/'>Home</Link> <span> | </span>
