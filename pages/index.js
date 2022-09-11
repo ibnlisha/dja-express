@@ -3,12 +3,12 @@ import styles from '../styles/Home.module.css'
 import { images } from '../public/imgs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faSearch } from '@fortawesome/free-solid-svg-icons';
-// import {useRouter} from 'next/router'
+import {useRouter} from 'next/router'
 import Link from 'next/link';
 import CostumerWidget from '../components/CostumerWidget';
 export default function Home() { 
   const [currentIdx, setCurrentIdx] = useState(0)
-  const [searchString, setSearchString] = useState('')
+  // const [searchString, setSearchString] = useState('')
   const router = useRouter()
   const nextSlide = () => {
     setCurrentIdx((currentIdx+1)%images.length)
