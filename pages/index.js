@@ -3,8 +3,7 @@ import styles from '../styles/Home.module.css'
 import { images } from '../public/imgs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faSearch } from '@fortawesome/free-solid-svg-icons';
-import Products from '../components/Products';
-import {useRouter} from 'next/router'
+// import {useRouter} from 'next/router'
 import Link from 'next/link';
 import CostumerWidget from '../components/CostumerWidget';
 export default function Home() { 
@@ -28,7 +27,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <form onSubmit={e => {
+        {/* <form onSubmit={e => {
           e.preventDefault();
           if(searchString){
             router.push({
@@ -48,7 +47,7 @@ export default function Home() {
           <button 
           style={{fontSize: '1.2em',}}
           ><FontAwesomeIcon icon={faSearch}/>Search</button>
-        </form>
+        </form> */}
         <div style={{
           backgroundImage: `url(${images[currentIdx]})`,
          }} className={`${styles.imgContainer} ${styles.show}`}>
