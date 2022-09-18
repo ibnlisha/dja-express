@@ -68,8 +68,11 @@
   cursor: pointer;
 }
 .wellcomeMessage{
-  color:antiquewhite;
-  font-size: 1.2em;
+  /* background-color: #eaeaea; */
+  /* border-radius: 50%; */
+  /* padding: 0.5em; */
+  color:#eaeaea;
+  font-size: 1.5em;
   text-align: center;
 }
 .card:hover,

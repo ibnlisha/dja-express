@@ -42,7 +42,7 @@ const ContanctUs = () => {
                     <FontAwesomeIcon icon = {faPhone} />
                         <a href='tel:+90 539 253 48 78'> +90 539 253 48 78</a> <br/>
                         <FontAwesomeIcon icon = {faEnvelope} />
-                        <a href = 'mailTo:expressdaj@gmail.com'> expressdaj@gmail.com</a>
+                        <a href = 'mailTo:info@djaexpress.com'> info@djaexpress.com</a>
                 </address>
             </div>
             <div className={styles.section}>
