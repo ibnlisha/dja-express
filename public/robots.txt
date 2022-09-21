@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.djaexpress.com/
+
+# Sitemaps
+Sitemap: https://www.djaexpress.com/sitemap.xml
