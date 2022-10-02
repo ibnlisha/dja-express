@@ -17,6 +17,7 @@
 .section{
     flex: 1;
     margin: 1em;
+    text-align: left;
 }
 .listItem{
     margin: 0.5em;
