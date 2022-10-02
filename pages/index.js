@@ -25,7 +25,10 @@ export default function Home() {
     return () => clearInterval(slideShow)
   },[nextSlide, slideShow])
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{
+      width: '100%',
+      marginTop: '0'
+    }}>
       <main className={styles.main}>
         {/* <form onSubmit={e => {
           e.preventDefault();

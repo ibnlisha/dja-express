@@ -58,7 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.2em auto;
+  margin: 0 auto;
 }
 .imgContainer:hover{
   justify-content: space-between;

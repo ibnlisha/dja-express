@@ -30,7 +30,7 @@
 
 .navbar{
     border-bottom: 0.2em groove grey;
-    margin-bottom: 1em;
+    /* margin-bottom: 0.2em; */
     background-color: #eaeaea;
 }
 .menu{
