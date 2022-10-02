@@ -120,6 +120,9 @@
   .imageSize{
     width: 100%;
   }
+  .wellcomeMessage{
+    font-size: 1em;
+  }
 }
 @keyframes slideup {
   from{

@@ -38,7 +38,7 @@ const ContanctUs = () => {
                 <address>
                     <FontAwesomeIcon icon={faLocationDot}/> Güllük Mahallesi, <br /> 
                     Kırımlılar sokak, <br />
-                    No: 13 <br />
+                    Zip code: 26170 <br />
                     <FontAwesomeIcon icon = {faPhone} />
                         <a href='tel:+90 539 253 48 78'> +90 539 253 48 78</a> <br/>
                         <FontAwesomeIcon icon = {faEnvelope} />

@@ -12,3 +12,9 @@
     padding: 0.5em;
     box-shadow: 0 0 15px -10px rgba(0,0,0,0.7);
 }
+
+@media screen and (max-width: 1024px) {
+    .widget{
+        font-size: 0.75em;
+    }
+}

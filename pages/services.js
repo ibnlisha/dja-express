@@ -6,7 +6,7 @@ import Chat from '../components/Chat'
 const Services = () => {
   return (
     <div className={styles.container}>
-      <Chat />
+      {/* <Chat /> */}
         <h1 className={styles.title}>Our Services</h1>
         <h4 style={{textAlign: 'center'}}>The servieces we offer are divided into three main categories which are</h4>
         <div className={styles.grid}>
