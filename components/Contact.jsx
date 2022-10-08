@@ -48,7 +48,7 @@ const ContanctUs = () => {
             <div className={styles.section}>
                 <h3>Stay connected:</h3>
                 <ul className={styles.list}>
-                    <li className={styles.listItem}><a href='https://web.whatsapp.com/'>
+                    <li className={styles.listItem}><a href='https://wa.me/905392534878'>
                         <FontAwesomeIcon icon = {faWhatsapp} /> WhatsApp</a></li>
                     <li className={styles.listItem}><a href='https://www.instagram.com/'>
                     <FontAwesomeIcon icon = {faInstagram} /> Instagram
